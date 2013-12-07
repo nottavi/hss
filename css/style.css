@@ -1,0 +1,75 @@
+* { 
+	margin: 0; 
+	padding: 0;
+}
+
+body { 
+	background: #f3f2ee top center url('../images/fond.jpg') no-repeat;
+	background-attachment:fixed; 
+	height:100%;
+}
+
+a { font-weight: bold; color: #a51e25; text-decoration: none;}
+
+#global { width: 960px; margin:0 auto;  min-height:716px;}
+#header { font-family: Helvetica, Arial; height: 130px; position: relative;}
+#header img { float: right; }
+.left { float: left; }
+.clear { clear: both;}
+#left { 
+	width: 240px;
+	padding: 10px 10px 0 20px;
+	color: #a51e25;
+	font-weight: bold;
+	font-size: 0.95em;
+}
+
+#main p {
+	margin:1.2em 0;
+}
+
+#main img { margin-right: 0.6em;}
+
+#maincontent { width: 700px; margin-left:270px; font-size: 0.8em;}
+#maincontent p { width: 620px;}
+#maincontent #imggauche { width: 200px; height: 250px; overflow: hidden; border:2px solid #fff; margin-right: 10px; }
+#maincontent #imgdroite { width: 400px; height: 250px; overflow: hidden; border:2px solid #fff; }
+#menu { 
+	margin: 1em; 
+	padding: 5px;
+	width: 810px;
+}
+
+#menu ul {
+	margin-left: 100px;
+	border-top: 2px solid orange;
+	border-bottom: 2px solid orange;
+	padding:5px 0;
+}
+#menu ul li { 
+	display: inline; 
+	font-weight: bold;
+	padding: 0 2.2em;
+	font-family: Helvetica;
+}
+
+#menu ul li a{
+	color: #a51e25;
+	text-decoration: none;
+}
+
+.address { font-weight: bold;
+		 color: #aaa; display: inline;}
+
+td { border: 1px solid #fff; padding: 5px; background-color: #ccc6b3; font-family: Helvetica; vertical-align: middle;}
+td b { color: #fff; }
+
+#footer { clear:both;font-family: Helvetica; margin: 45px auto 0 auto; width: 900px; text-align: left; color: #000; padding-top: 0.4em; font-size: 0.8em; font-weight: bold; }
+
+
+#footerlink {
+	width: 100%;
+	
+}
+
+#footerlink td { border:0px; }
