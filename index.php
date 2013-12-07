@@ -1,4 +1,19 @@
-<?php include( 'controller.php' ); ?>
+<?php
+require 'vendor/autoload.php';
+include( 'controller.php' );
+
+$loader = new Twig_Loader_String();
+$twig = new Twig_Environment($loader);
+
+$loader = new Twig_Loader_Filesystem('templates');
+$twig = new Twig_Environment($loader, array(
+    'cache' => 'cache',
+));
+
+echo $twig->render('index.html', array('name' => 'Nco'));
+
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $lang; ?>" lang="<?php echo $lang; ?>">
 
