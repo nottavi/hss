@@ -1,0 +1,7 @@
+{
+    "name":"nottavi/hss",
+    "type":"website",
+    "require": {
+        "twig/twig" : "1.15.*"
+    }
+}
