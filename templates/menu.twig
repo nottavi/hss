@@ -1,0 +1,17 @@
+<div id="menu">
+    {# TODO: language switcher #}
+    <div id="lang" style="float: left; padding:10px;"><a href="{{  url_hp_fr }}"><img src="images/btn-language-fre.gif" border="0" alt="fr"></a>&nbsp;
+        <a href="{{ url_hp_en }}"><img src="images/btn-language-eng.gif" border="0" alt="en"></a></div>
+
+    <ul>
+        {% for menu in french_menu %}
+            <li><a href="{{ menu.url }}">{{ menu.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <ul>
+        {% for menu in english_menu %}
+            <li><a href="{{ menu.url }}">{{ menu.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>

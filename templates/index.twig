@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    {{  include('page_head.twig') }}
+</head>
+<body>
+<div id="global">
+    {{  include('header.twig') }}
+    {{  include('menu.twig') }}
+
+    <div id="main">{{ content }}</div>
+
+
+    {{ include('footer.twig') }}
+</div>
+
+{{ include('socket.twig') }}
+
+</body>
+</html>
